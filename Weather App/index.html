@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+       body {
+background-image: linear-gradient(100deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+        #box1{
+            /* border: solid; */
+            margin: 20px;
+            border-radius: 30px;
+
+        }
+        #box2{
+            /* border: solid; */
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0 0 10px;
+            font-size: 25px;
+        }
+        #inp1{
+            width: 100%;
+             border-radius: 30px;
+            outline: none;
+            padding: 5px;
+            background-color: transparent;
+             border-bottom:1px solid black;
+             border-top:none;
+             border-left: none;
+             border-right: none;
+        }
+        #box1{
+           width: 50%;
+           box-shadow: 0 0 10px;
+          
+        }
+        .row{
+            margin-top: 20px;
+        }
+        #icon{
+           height: 100px;
+           width: 100px;
+        }
+        #temp{
+            font-size: 40px;
+            padding: 20px;
+            width: 30%;
+            margin: 10px;
+        }
+        #city{
+            font-size: 30px;
+        }
+        #desc{
+             font-size: 30px;
+        }
+        #btn{
+            padding: 10px;
+            width: 80%;
+            box-shadow: 0 0 10px ;
+        }
+        #btn:hover{
+            background-color: rgb(62, 90, 156);
+        }
+        h1{
+            font-weight: 800;
+            text-shadow: 0 0 10px ;
+            color:rgb(50, 57, 77)
+        }
+        @media screen and (max-width: 984px){
+    #box1{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+        }
+    #box2{
+        
+        width: 80%;
+        margin: auto;
+    }
+    #btn{
+        width: 50%;
+    }
+    #temp{
+            font-size: 20px;
+    }
+    #city{
+            font-size: 20px;
+    }
+    #desc{
+            font-size: 20px;
+    }
+    #humidity{
+            font-size: 20px;
+    }
+    #wind{
+            font-size: 20px;
+    }
+    #fahrenheit{
+        font-size: 20px;
+    }
+    #inp1{
+        font-size: 20px;
+    }
+    #btn:hover{
+            background-color: rgb(62, 90, 156);
+        }
+    }
+    </style>
+
+</head>
+<body>
+
+
+    <div class="container text-center mt-5 ">
+        <h1>Weather App</h1>
+    </div>
+    
+    <div class="container text-center mt-5 ">
+        <div class="row">
+           <div id="box1" class="col-6">
+          <div class="row">
+            <div class="col-6">
+                 <p id="temp">temp</p>
+          <figure>
+           </div>
+            <div class="col-5">
+                <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-sun" viewBox="0 0 16 16">
+  <path d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .624.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .51-.375A3.5 3.5 0 0 1 7 8m4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5z"/>
+  <path d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708zm1.734 3.374a2 2 0 1 1 3.296 2.198q.3.423.516.898a3 3 0 1 0-4.84-3.225q.529.017 1.028.129m4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377M14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z"/>
+</svg>
+          </figure>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5">
+                 <p id="city">city</p>
+          
+            </div>
+            <div class="col-5">
+                 <p id="desc">desc</p>
+            </div>
+          </div>
+           </div>
+
+             <div id="box2" class="col-4">
+             <p id="humidity"> Humidity: </p>
+             <p id="wind"> Wind Speed: </p>
+             <p id="fahrenheit"> Fahrenheit: </p>
+
+             <input class="text-center" type="text" name="" id="inp1" placeholder="Enter City Name" >
+             <button class="mt-4 btn"   id="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+</svg>
+             </button>
+             <i ></i>
+           </div>
+        </div>
+    </div>
+
+    <script src="./weather.js"></script>
+
+       
+</body>
+</html>

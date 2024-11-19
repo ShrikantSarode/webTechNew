@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var exp = /^{1-9}[0-9][0-9][0-9][0-9]$/; //^[1-9] is range for first digit from 1 to 9 and [0-9]{4} is for remaining 4 digits}
+      var pincode = 411054;
+      var result1 = exp.test(pincode);
+      console.log(result1);
+      ///////////////////////////////////////////////////
+      var exp1 = /^[6-9][0-9]{9}$/; //{9} is range for first digit from 6 to 9 and {9} is for remaining 9 digits}
+
+      var mobile = 9855745455;
+      var result = exp1.test(mobile);
+      console.log(result);
+      ///////////////////////////////////////////////////
+      var exp2 = /^([a-zA-Z]{5})([0-9]{4})([a-zA-Z])$/; //for 5 letter alphabets followed by 4 digits and 1 letter at the end
+      var result2 = exp2.test("ABCDW1234D");
+      console.log(result2);
+
+      ///////////////////////////////////////////////////
+      var exp3 = /^[a-zA-Z]([a-zA-Z ]+)?[a-zA-Z]$/; //for names with optional middle name
+      console.log("result3");
+
+      var result3 = exp3.test("John Deo");
+      console.log("result4");
+      var result4 = exp3.test("John Baba Doe");
+
+      console.log(result3);
+      console.log(result4);
+      ///////////////////////////////////////////////////
+      var exp4 = /^([a-zA-Z0-9]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,})?$/;//email validation expression using regex
+      var result5 = exp4.test("john@example.com");
+      var result6 = exp4.test("johnexample.com");
+      var result7 = exp4.test("john@examplecom");
+      console.log("result5,6,7");
+
+      console.log(result5);
+      console.log(result6);
+      console.log(result7);
+    ///////////////////////////////////////////////////
+//password
+    var exp5=/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])().(4,12)$/ //min 4 and max 12 characters, 4 digits and 4 special characters 
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+{
+  "cities": [
+    {
+      "name": "Mumbai",
+      "temperature": 30,
+      "humidity": 70,
+      "condition": "Clear"
+    },
+    {
+      "name": "Delhi",
+      "temperature": 25,
+      "humidity": 50,
+      "condition": "Cloudy"
+    },
+    {
+      "name": "Bangalore",
+      "temperature": 28,
+      "humidity": 60,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "name": "Chennai",
+      "temperature": 32,
+      "humidity": 65,
+      "condition": "Sunny"
+    },
+    {
+      "name": "Kolkata",
+      "temperature": 29,
+      "humidity": 80,
+      "condition": "Rainy"
+    },
+    {
+      "name": "Hyderabad",
+      "temperature": 27,
+      "humidity": 55,
+      "condition": "Clear"
+    },
+    {
+      "name": "Pune",
+      "temperature": 26,
+      "humidity": 60,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "name": "Jaipur",
+      "temperature": 28,
+      "humidity": 45,
+      "condition": "Sunny"
+    },
+    {
+      "name": "Ahmedabad",
+      "temperature": 31,
+      "humidity": 50,
+      "condition": "Clear"
+    },
+    {
+      "name": "Lucknow",
+      "temperature": 24,
+      "humidity": 65,
+      "condition": "Cloudy"
+    },
+    {
+      "name": "Bhopal",
+      "temperature": 26,
+      "humidity": 55,
+      "condition": "Clear"
+    },
+    {
+      "name": "Gurgaon",
+      "temperature": 27,
+      "humidity": 50,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "name": "Surat",
+      "temperature": 30,
+      "humidity": 60,
+      "condition": "Clear"
+    },
+    {
+      "name": "Kanpur",
+      "temperature": 25,
+      "humidity": 70,
+      "condition": "Rainy"
+    },
+    {
+      "name": "Nagpur",
+      "temperature": 29,
+      "humidity": 55,
+      "condition": "Clear"
+    },
+    {
+      "name": "Thiruvananthapuram",
+      "temperature": 28,
+      "humidity": 75,
+      "condition": "Rainy"
+    },
+    {
+      "name": "Visakhapatnam",
+      "temperature": 27,
+      "humidity": 60,
+      "condition": "Partly Cloudy"
+    }
+  ]
+}

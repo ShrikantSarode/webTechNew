@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 7) create a paragraph , on mouseover apply background color (grey) & onmouseout apply background color
+(lightgrey) -->
+
+<p id="para">Lorem ipsum dolor sit amet.</p>
+
+<script>
+    let para=document.getElementById("para");
+
+    para.onmouseover=()=>{
+        para.style.backgroundColor = "grey";
+    }
+    para.onmouseout=()=>{
+         para.style.backgroundColor = "lightgrey";
+    }
+</script>
+</body>
+</html>

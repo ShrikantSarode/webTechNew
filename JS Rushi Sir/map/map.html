@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num=[1,2,3,4,5];
+        var square=[];
+
+        for(let i=0;i<num.length;i++)
+    {
+        square.push(num[i] * num[i]);
+    }
+    console.log(num);
+    
+    // console.log(square);
+
+   var square2= num.map((num)=>{
+
+        return num*num;
+    })
+    console.log(square2);
+    
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- create arr obj of user id age name create 5 users. take name of all users -->
+
+    <script>
+        let users=[
+            {
+            id:1,
+            name: 'John',
+            age:22,
+        },
+        {
+            id:2,
+            name:'shrikant',
+            age:25,
+        }, 
+        {
+            id:3,
+            name:'Raju',
+            age:23,
+        },
+
+    ]
+
+    //tradition way
+    var name1=[];
+
+    for(let i=0;i<users.length;i++)
+    {
+        name1.push(users[i].name);
+    }
+    console.log(name1);
+    
+
+    let username=users.map((users)=>{
+        return users.name;
+    })
+    console.log(username);
+    
+    </script>
+</body>
+</html>

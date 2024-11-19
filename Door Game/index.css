@@ -1,0 +1,68 @@
+/* Global Body Styles */
+body {
+  background-color: #f0f8ff; /* Light blue background */
+  font-family: "Arial", sans-serif;
+  color: #333;
+  padding-top: 30px;
+}
+
+/* Center-align containers */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Select Dropdown Style */
+.form-select {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #007bff;
+  background-color: #ffffff;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.form-select:focus {
+  border-color: #0056b3;
+  background-color: #e7f3ff;
+}
+
+/* Additional Styling for Select Box */
+select option {
+  font-size: 1rem;
+}
+
+/* Style Buttons (if any) */
+.btn {
+  margin-top: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .form-select {
+    width: 80%;
+  }
+}

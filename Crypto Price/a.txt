@@ -1,0 +1,26 @@
+url-https://api.api-ninjas.com/v1/cryptoprice
+
+
+const symbol = 'LTCBTC';
+const api_url = `https://api.api-ninjas.com/v1/cryptoprice?symbol=${symbol}`;
+const apiKey = 'YOUR_API_KEY';
+
+fetch(api_url, {
+    method: 'GET',
+    headers: {
+        'X-Api-Key': apiKey
+    }
+})
+.then(response => {
+    if (response.ok) {
+        return response.text();
+    } else {
+        throw new Error(`Error: ${response.status} ${response.statusText}`);
+    }
+})
+.then(data => {
+    console.log(data);
+})
+.catch(error => {
+    console.error(error);
+});

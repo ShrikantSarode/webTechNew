@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 6) create a textbox, enter dummy content and use onkeyup event to show 2 result:
+a) data in capital case ( in paragraph having id para1)
+b) data in small case ( in paragraph having id para2) -->
+
+    <textarea name="" id="text" placeholder="Type here"></textarea>
+
+    <p id="para1"></p>
+    <p id="para2"></p>
+
+    <script>
+      let text = document.getElementById("text");
+
+      text.onkeyup = () => {
+        let inputText = text.value;
+
+        document.getElementById("para1").innerHTML = inputText.toUpperCase();
+
+        document.getElementById("para2").innerHTML = inputText.toLowerCase();
+      };
+    </script>
+  </body>
+</html>

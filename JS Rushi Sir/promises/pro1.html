@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log("start");
+
+      const fetchData = () => {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            let isDone = false;
+            if (isDone) {
+              resolve("Work is done");
+            } else {
+              reject("Work is not done");
+            }
+          }, 2000);
+        });
+      };
+      console.log(fetchData());
+      
+      console.log("End");
+
+      fetchData().then((res) =>{
+        console.log(res);
+        
+      } ).catch((err)=>{
+        console.log(err);
+        
+      })
+    </script>
+  </body>
+</html>

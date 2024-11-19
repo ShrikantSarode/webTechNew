@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <h1>product</h1>
+    <p id="x1">Lorem ipsum dolor sit amet.</p>
+
+    <div class="x2">Lorem ipsum dolor sit amet.</div>
+
+    <!-- Events and Effects -->
+
+    <button id="x1">Hide</button>
+    <button id="x2">Show</button>
+
+    <!-- jquery selector -->
+
+    <script>
+      $("h1"); // select all h1 elements
+      $("h1").css("background", "red"); // change color of h1 to
+      $("#x1").css("border", "solid").width("200px").height("200px"); // change properties of id x1
+
+      $('.x2').html("<strong>New Text</strong>"); // change content of id x1 to strong text
+
+
+
+    </script>
+  </body>
+</html>

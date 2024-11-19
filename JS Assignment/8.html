@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 8) generate a function name calculate (Note: here you must have anonymous function instead of regular function).
+print dummy text in console.
+a) call the same function using onblur event ( here use textbox )
+b) call the same function using onfocus event ( here use textbox ) -->
+
+    <textarea name="" id="text" placeholder="Text Here"></textarea>
+
+    <script>
+      let text = document.getElementById("text");
+
+      text.onblur = function () {
+        console.log("on blur event");
+      };
+      text.onfocus = function () {
+        console.log("on focus event");
+      };
+    </script>
+  </body>
+</html>

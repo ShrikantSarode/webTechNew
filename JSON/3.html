@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <input type="text" name="" id="x1">
+    <input type="password" name="" id="x2">
+    <button>Get</button>
+
+
+    <script>
+        $(document).ready(function() {
+
+            $('button').click(function() {
+                var data1=$('#x1').val()
+                var data2=$('#x2').val()
+                
+                var rec={"email:":data1,"password":data2}
+                console.log(rec);
+
+                var result= JSON.stringify(rec);
+                
+            })
+        })
+    </script>
+</body>
+</html>

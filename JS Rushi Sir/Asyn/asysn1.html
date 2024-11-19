@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log("start");
+
+      const fetchData = () => {
+        console.log("long Task");
+      };
+      fetchData();
+      console.log("end");
+      console.log("--------------------------------------------");
+
+      console.log("start asynchronous Programming");
+
+      const fectData1 = () => {
+        setTimeout(() => {
+          console.log("long Task");
+        }, 3000);
+      };
+
+      fectData1();
+      console.log("End");
+    </script>
+  </body>
+</html>

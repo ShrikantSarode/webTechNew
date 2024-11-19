@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <button>Submit</button>
+
+    <script>
+      document.addEventListener("click", () => {
+         
+          var result = axios.get("http://localhost:9000/users")
+        // console.log(result);
+
+        result.then((value)=>{
+            console.log(value.data);
+            
+        }).catch((error)=>{
+            console.log(error.message);
+            
+        })
+
+      });
+    </script>
+  </body>
+</html>

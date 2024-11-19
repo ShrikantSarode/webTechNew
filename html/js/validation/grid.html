@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container p-3">
+      <div class="row">
+        <div style="border: solid" class="col-3">
+          <h2>Category</h2>
+
+          <ul></ul>
+        </div>
+        <div style="border: solid" class="col-9">
+          <h2>Product</h2>
+
+          <div class="row" id="row"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      "use strict";
+
+      var category = ["Electronic", "colthing", "Books","Home & Kitchen"];
+
+
+      var products = [
+        {
+          name: "Boat Earbubs",
+          price: 899,
+          path: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRjT_WCvFtjZIijwSADRuce-Rmu6uxko_1wDfgDq4dO9HMsjKLYUah78KFMJ1HqBE8OuktS0rZqzkYy9dNPlsToZ8cnFr5gG7UoWsaNpOWPyfSpB1mGcCA4",
+        },
+        {
+          name: "Sweater",
+          price: 990,
+          path: "https://media.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/max-new/1000014255673-Beige-IVORY-1000014255673_01-2100.jpg",
+        },
+        {
+          name: "Jacket",
+          price: 1300,
+          path: "https://media-uk.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/max-new/1000012893779-Blue-MIDBLUE-1000012893779_01-2100.jpg",
+        },
+        
+      ];
+
+      //short circuit operator to prevent the execution of further code if the category array is empty
+
+      category && category.length > 0 && category.forEach((v, i) => {
+          console.log(v);
+          console.log(i);
+
+          var listtag=document.createElement('li');
+          console.log(listtag);
+
+          document.querySelector("ul").append(listtag);
+
+          listtag.innerHTML=v;
+          
+        });
+
+        products && products.length>0 && products.forEach((v, i) => {
+
+            console.log(v);
+
+            var divtag=document.createElement('div');
+
+            console.log(divtag);
+
+            divtag.className='col-xl-4 text-center ';
+            
+            var imgtag=document.createElement('img');
+            var h2tag=document.createElement('h2');
+            var ptag=document.createElement('p');
+
+            imgtag.src=v.path;
+
+
+            imgtag.className="img-fluid"
+
+            h2tag.innerHTML=v.name;
+            ptag.innerHTML=v.price;
+
+            divtag.append(imgtag);
+            divtag.append(h2tag);
+            divtag.append(ptag);
+
+            document.getElementById("row").append(divtag);
+ 
+            
+        });
+    </script>
+  </body>
+</html>

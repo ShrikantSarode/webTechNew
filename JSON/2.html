@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <button>Get Data</button>
+    <p></p>
+
+
+
+    <script>
+        $(document).ready(function() {
+            $('button').click(function() {
+                // alert('Fetching data...');
+                $.getJSON("2.json", function(data) {
+                    console.log(data);
+
+                    $('p').text(`<ul>${data.name}</u>`)//inner text property to display plain text
+                    $('p').html(`<u>${data.name}</u>`)//inner html property to display HTML code
+                    
+                })
+            })
+        })    </script>
+</body>
+</html>

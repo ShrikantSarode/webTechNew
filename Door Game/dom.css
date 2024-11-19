@@ -1,0 +1,28 @@
+ .box{
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+ }
+ #box1{
+
+ }
+ #box2{
+    padding: 20px;
+ }
+ #box3{
+     padding: 80px;
+ }
+ button{
+    padding: 20px;
+    margin: 5px;
+ }
+ .result{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+ }
+ input{
+   background: transparent;
+ }

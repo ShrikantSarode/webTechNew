@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+ }
+
+ :root{
+    --primary-text-color: #161a1d;
+    --secondary-text-color: #660708;
+ }
+
+ body{
+   font-family: Poppins,sans-serif;
+    color: var(--primary-text-color);
+    background-color:#f5f3f4;
+ }
+
+ p{
+   font-family: Roboto,sans-serif;
+    color: var(--secondary-text-color);
+ }
+ .top-nav{
+    background-color: #e5383b;
+ }
+ .menus{
+    width: 100%;
+     justify-content: center;
+     gap: 20px;
+ }
+ .nav-links{
+    color: var(--primary-text-color) !important;
+ }
+  
+ .nav-links:hover{
+    /* color: var(--secondary-text-color) !important; */
+    color: #0091ff !important;
+}
+.nav-link:active{
+    color: #ffffff;
+    text-shadow:5px 5px 5px #ffffff  !important;
+ }
+.card{
+   box-shadow: 2px 5px 10px #161a1d ;
+}
+.card:hover{
+   background-color: #d3d3d3;
+  cursor: pointer;
+  transform: translateY(-10px);
+  transition: all 0.3s;
+}
+.card-body>h4,h6{
+   color: var(--primary-text-color);
+}

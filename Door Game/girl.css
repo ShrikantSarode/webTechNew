@@ -1,0 +1,75 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #cd05ff; */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 300px;
+}
+
+/* Input Field */
+#inp2 {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+#inp2:focus {
+  border-color: #ff00ea;
+  outline: none;
+}
+
+/* Buttons Styling */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #882a70;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Result Styling */
+#result1 {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Clear Button Style */
+button.clear-btn {
+  background-color: #dc3545;
+}
+
+button.clear-btn:hover {
+  background-color: #c82333;
+}
