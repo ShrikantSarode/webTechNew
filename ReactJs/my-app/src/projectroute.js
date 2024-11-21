@@ -11,8 +11,8 @@ import Class2 from "./Components/Class2";
 import Class3 from "./Components/Class3";
 import Class4 from "./Components/Class4";
 import CompA from "./Components/CompA";
-import CompB from "./Components/CompB";
-import Compc from "./Components/Compc";
+import Parent from "./Components/Parent";
+import Parent2 from "./Components/Parent2";
 
 const projectroute = createBrowserRouter([
   {
@@ -65,12 +65,12 @@ const projectroute = createBrowserRouter([
         element: <CompA />,
       },
       {
-        path: "/1",
-        element: <CompB />,
+        path: "/parent",
+        element: <Parent />,
       },
       {
-        path: "/2",
-        element: <Compc />,
+        path: "/parent2",
+        element: <Parent2 />,
       },
     ],
   },

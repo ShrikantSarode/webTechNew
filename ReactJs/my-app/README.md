@@ -1,7 +1,9 @@
 --Data tranfer:
 1.props drilling |
-2.context api    |--> to overcome these we use Redux library
-3.state lift     |
+2.context api |--> to overcome these we use Redux library
+3.state lift |
+1,2- use to transfer data from parent to child
+3- is used to transfer data from child to parent
 
     props drilling & context api :
         -from parent to any child or any grand-child

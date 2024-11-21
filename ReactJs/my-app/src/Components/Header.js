@@ -72,6 +72,16 @@ function Header() {
                     PropsDrillingAndContextApi
                   </Link>
                 </li>
+                <li class="nav-item">
+                  <Link class="nav-link " to="/parent">
+                    Parent
+                  </Link>
+                </li>
+                <li class="nav-item">
+                  <Link class="nav-link " to="/parent2">
+                    Parent2
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
