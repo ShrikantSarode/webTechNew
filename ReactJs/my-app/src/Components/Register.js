@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 export default function Register() {
   var [count, setCount] = useState(100);
-  var [name, setName] = useState("Shrikant");
+  var [name, setName] = useState("Shrikant");//changable data for user to handle
   // var [name1, setName1] = useState("Shrikant");
   // var name2="Shrikant"
   //when you visited the commponent useEffect hook get called
@@ -19,6 +19,7 @@ export default function Register() {
     // setName(name2 + " Registered");
     setName(" Registered");
   }
+  
   //useEffect with conditional rendering variables i.e name 
   //it will render only the name changed
     useEffect(() => {
