@@ -5,17 +5,17 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./css/style.css";
 import projectroute from "./projectroute";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Provider } from "react-redux";
+import projectstore from "./Redux/projectstore";
 
-// console.log(React,ReactDOM);
 
+ 
+// Create root for React app
 const result = ReactDOM.createRoot(document.getElementById("root"));
 
-// result.render("What is your Age?");
-// var userName = "Shrikant";
-// var age = 22;
-
-// result.render(<App />);
-
+// Render the app with Redux provider and Router
 result.render(
-     <RouterProvider router={projectroute} />
-)
+  <Provider store={projectstore}>
+    <RouterProvider router={projectroute} />
+  </Provider>
+);

@@ -1,7 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Outlet, Link } from "react-router-dom";
 
 function Header() {
+  var ans = useSelector((state)=>state.cart.value)
     return (
       <>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -82,10 +84,15 @@ function Header() {
                     Parent2
                   </Link>
                 </li>
+                <li class="nav-item">
+                  <Link class="nav-link " to="/cart">
+                    Cart({ans.length})
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
-        </nav>
+        </nav> 
       </>
     );
 }
